@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./compiled/flipclock.css">
+    <script src="https://kit.fontawesome.com/ff38e5c58a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script type="text/javascript"src="./compiled/flipclock.js"></script>	
+	</head>
+	<body>
+
+    <main class="container">
+        
+      <section class="bg-stars"></section>
+        
+      <section class="middle" >
+        <h1>WE'RE LAUNCHING SOON</h1>
+	    	<div class="clock"></div>
+      </section>
+
+	    	<section class="patternHills"></section>
+
+        <section class="footer">
+          <ul>
+            <li><a href="https://github.com/DaniJFerr/Launch-countdown-timer"><i class="fa-brands fa-github" style="color: #8486a9;"></i></a></li>
+            <li><a href="linkedin.com/in/daniel-ferreira-166741225"><i class="fa-brands fa-linkedin" style="color: #8486a9;"></i></a></li>
+          </ul>
+          <p>Daniel Ferreira © 2023</p>
+        </section>
+      
+      </main>
+
+        <script type="text/javascript">
+          var clock;
+          
+          $(document).ready(function() {
+            var clock;
+      
+              clock = $('.clock').FlipClock({
+                  clockFace: 'DailyCounter',
+                  autoStart: false,
+                  callbacks: {
+                    stop: function() {
+                      $('.message').html('The clock has stopped!')
+                    }
+                  }
+              });
+                  
+              clock.setTime(220880);
+              clock.setCountdown(true);
+              clock.start();
+      
+          });
+        </script>   
+    
+	</body>
+  
+</html>
