@@ -14,7 +14,7 @@ body, html{
   h1{
     font: normal 11px "Red Hat Text", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.5rem;
-    margin-top: 50px;
+    margin-top: 0px;
     letter-spacing: 10px;
     color: hsl(0, 0%, 100%);
   }
@@ -33,7 +33,7 @@ body, html{
   .middle{
     width: 700px;
     height: 250px;
-    padding: 20px auto;
+  
     text-align: center;  
     justify-content: center;
     display: flex;
@@ -62,7 +62,7 @@ body, html{
     width: 400px;
     position: absolute;
     text-align: center;
-    bottom: 70px;
+    bottom: 20px;
   }
   
   .footer ul{
@@ -154,7 +154,7 @@ body, html{
     text-align: center;
     position: absolute;
     width: 560px;
-    margin-top: 150px;
+    margin-top: 80px;
   }
   
   .flip-clock-wrapper:before,
